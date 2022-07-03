@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+$MC: #4b4a67;
+$FF: 'Poppins', sans-serif;
+@keyframes loaderSwipeAnim{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+  }
+*{
+    font-family: $FF;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+@import "./styles/header.scss";
+@import "./styles//Products.scss";

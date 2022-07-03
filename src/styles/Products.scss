@@ -1,0 +1,85 @@
+.Products-Panel{
+    padding: 20px;
+    height: calc(100vh - 75px);
+    overflow-y: auto;
+    position: relative;
+    .wrap{
+        .filter-container{
+            .filter-wrapper{
+                padding: 6px;
+                display: flex;
+                gap: 4px;
+                input{
+                    padding: 2px 5px;
+                }
+            }
+        }
+        .products-container{
+            .products-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                .single-product{
+                    flex-basis: calc(100% / 6);
+                    @media(max-width: 1440px){
+                        flex-basis: calc(100% / 4);
+                    }
+                    @media(max-width: 991px){
+                        flex-basis: calc(100% / 3);
+                    }
+                    @media(max-width: 768px){
+                        flex-basis: 50%;
+                    }
+                    @media(max-width: 550px){
+                        flex-basis: 100%;
+                    }
+                    .product-wrapper{
+                        padding: 6px;
+                        height: 100%;
+                        .product{
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                            &:hover{
+                                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                            }
+                            transition: all 3s ease-in-out;
+                            height: 100%;
+                            .image{
+                                height: 160px;
+                                position: relative;
+                                img{
+                                    width: 100%;
+                                    height: 160px;
+                                    object-fit: cover;
+                                }
+                            }
+                            a{
+                                text-decoration: none;
+                                color: black;
+                                .content{
+                                    padding: 12px;
+                                    .name-wrapper, .price-wrapper,.desc-wrapper, .categ-wrapper{
+                                        position: relative;
+                                        margin: 6px 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .More-Products{
+            display: flex;
+            justify-content: center;
+            button{
+                cursor: pointer;
+                padding: 20px 10px;
+                background-color: $MC;
+                border: none;
+                color: white;
+                border-radius: 6px;
+                margin: 10px;
+                width: 200px;
+            }
+        }
+    }
+}

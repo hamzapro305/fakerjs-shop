@@ -1,0 +1,25 @@
+header{
+    background-color: $MC;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        ul{
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    a{
+        text-decoration: none;
+        .logo{
+            color: white;
+        }
+    }
+}
